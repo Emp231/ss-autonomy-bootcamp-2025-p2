@@ -42,7 +42,7 @@ NUM_TELEMETRY = 1
 NUM_COMMAND = 1
 
 # Any other constants
-TARGET = command.Position(10,10,10)
+TARGET = command.Position(10, 10, 10)
 
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
@@ -134,7 +134,6 @@ def main() -> int:
     if not result:
         return -1
 
-
     # Command
     result, command_worker_prop = worker_manager.WorkerProperties.create(
         target=command_worker.command_worker,
@@ -176,11 +175,9 @@ def main() -> int:
     # Main's work: read from all queues that output to main, and log any commands that we make
     # Continue running for 100 seconds or until the drone disconnects
     start_time = time.time()
-    queues = [
-        sender_queue, receiver_queue, telemetry_queue, command_queue
-    ]
+    queues = [sender_queue, receiver_queue, telemetry_queue, command_queue]
 
-    while(time.time() - start_time < 100 and connection.target_system != 0):
+    while time.time() - start_time < 100 and connection.target_system != 0:
         for output in queues:
             while True:
                 try:
