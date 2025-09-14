@@ -6,7 +6,7 @@ import os
 import pathlib
 
 from pymavlink import mavutil
-
+import time
 from utilities.workers import queue_proxy_wrapper
 from utilities.workers import worker_controller
 from . import telemetry
@@ -18,13 +18,15 @@ from ..common.modules.logger import logger
 # =================================================================================================
 def telemetry_worker(
     connection: mavutil.mavfile,
-    args,  # Place your own arguments here
-    # Add other necessary worker arguments here
+    queue: queue_proxy_wrapper.QueueProxyWrapper,
+    controller: worker_controller.WorkerController,
 ) -> None:
     """
     Worker process.
 
-    args... describe what the arguments are
+    queue is where the worker will communicate the status
+    connection is the connection to the drone
+    controller is how the communication happens
     """
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
@@ -47,8 +49,27 @@ def telemetry_worker(
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (telemetry.Telemetry)
-
+    result, telemetry_obj = telemetry.Telemetry.create(connection=connection, local_logger=local_logger)
+    if not result:
+        local_logger.error("Failed to create telemetry object")
+        return
+    
     # Main loop: do work.
+    while not controller.is_exit_requested():
+        try:
+            data = telemetry_obj.run()
+            if data:
+                local_logger.info(f"Telemetry data queued: {data}", True)
+                queue.queue.put(data)
+            else:
+                local_logger.info("Telemetry run returned None", True)
+        except Exception as e:
+            local_logger.error(f"Error when running main loop: {e}", True)
+        
+        time.sleep(0.01)
+    
+    local_logger.info("Worker has stopped")
+
 
 
 # =================================================================================================
