@@ -18,7 +18,7 @@ from ..common.modules.logger import logger
 # =================================================================================================
 def heartbeat_sender_worker(
     connection: mavutil.mavfile,
-    controller: worker_controller.WorkerController
+    controller: worker_controller.WorkerController,
     # Add other necessary worker arguments here
 ) -> None:
     """
@@ -52,14 +52,14 @@ def heartbeat_sender_worker(
     if not result:
         local_logger.error("Failed to create Heartbeat Sender object")
 
-
     # Main loop: do work.
     while not controller.is_exit_requested():
-        try: 
+        try:
             sender.run(local_logger=local_logger)
-        except Exception as e:
+        except (OSError, mavutil.mavlink.MAVError) as e:
             local_logger.error(f"Error in heartbeat sender worker: {e}", True)
         time.sleep(1)
+
 
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

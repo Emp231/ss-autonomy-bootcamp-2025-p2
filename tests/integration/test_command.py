@@ -7,6 +7,7 @@ import multiprocessing as mp
 import subprocess
 import threading
 import time
+from queue import Empty
 
 from pymavlink import mavutil
 
@@ -73,7 +74,7 @@ def read_queue(
         try:
             msg = output_queue.queue.get(timeout=1)
             main_logger.info(f"Output message: {msg}", True)
-        except (OSError, ValueError, EOFError):
+        except (OSError, ValueError, EOFError, Empty):
             break
 
 

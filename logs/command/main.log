@@ -1,4 +1,4 @@
-01:43:23: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\common\modules\logger\logger_main_setup.py | setup_main_logger | 62] main logger initialized
-01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | main | 130] Connected!
-01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 75] Output message: Change in Alt.: 1.00
-01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 75] Output message: Change in Alt.: -1.00
+13:50:17: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\common\modules\logger\logger_main_setup.py | setup_main_logger | 62] main logger initialized
+13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | main | 130] Connected!
+13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 76] Output message: Change in Alt.: 1.00
+13:50:19: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 76] Output message: Change in Alt.: -1.00

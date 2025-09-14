@@ -4,9 +4,9 @@ Telemtry worker that gathers GPS data.
 
 import os
 import pathlib
+import time
 
 from pymavlink import mavutil
-import time
 from utilities.workers import queue_proxy_wrapper
 from utilities.workers import worker_controller
 from . import telemetry
@@ -49,11 +49,13 @@ def telemetry_worker(
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (telemetry.Telemetry)
-    result, telemetry_obj = telemetry.Telemetry.create(connection=connection, local_logger=local_logger)
+    result, telemetry_obj = telemetry.Telemetry.create(
+        connection=connection, local_logger=local_logger
+    )
     if not result:
         local_logger.error("Failed to create telemetry object")
         return
-    
+
     # Main loop: do work.
     while not controller.is_exit_requested():
         try:
@@ -63,13 +65,12 @@ def telemetry_worker(
                 queue.queue.put(data)
             else:
                 local_logger.info("Telemetry run returned None", True)
-        except Exception as e:
+        except (OSError, mavutil.mavlink.MAVError) as e:
             local_logger.error(f"Error when running main loop: {e}", True)
-        
-        time.sleep(0.01)
-    
-    local_logger.info("Worker has stopped")
 
+        time.sleep(0.01)
+
+    local_logger.info("Worker has stopped")
 
 
 # =================================================================================================

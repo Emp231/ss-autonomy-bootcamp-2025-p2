@@ -5,6 +5,7 @@ Test the heartbeat reciever worker with a mocked drone.
 import multiprocessing as mp
 import subprocess
 import threading
+from queue import Empty
 
 from pymavlink import mavutil
 
@@ -70,7 +71,7 @@ def read_queue(
             if status == "stop":
                 break
             main_logger.info(f"Queue status: {status}")
-        except (OSError, ValueError, EOFError):
+        except (OSError, ValueError, EOFError, Empty):
             continue
 
 

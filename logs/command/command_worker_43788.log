@@ -1,0 +1,59 @@
+13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command_worker.py | command_worker | 48] Logger initialized
+13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 29)
+13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 99] Change in Alt.: 1.00
+13:50:19: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 31)
+13:50:19: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 99] Change in Alt.: -1.00
+13:50:19: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 30.2)
+13:50:20: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 29.8)
+13:50:20: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 30)
+13:50:21: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 30)
+13:50:21: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 30)
+13:50:22: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 30)
+13:50:22: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 63.43
+13:50:22: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (10, 0, 30)
+13:50:22: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 90.00
+13:50:23: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (20, 0, 30)
+13:50:23: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 116.57
+13:50:23: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 0, 30)
+13:50:23: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 45.00
+13:50:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 10, 30)
+13:50:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 63.43
+13:50:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 20, 30)
+13:50:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 90.00
+13:50:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 30, 30)
+13:50:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 26.57
+13:50:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (20, 30, 30)
+13:50:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 45.00
+13:50:26: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (10, 30, 30)
+13:50:26: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 90.00
+13:50:26: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 30, 30)
+13:50:26: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 45.00
+13:50:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 20, 30)
+13:50:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 90.00
+13:50:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 10, 30)
+13:50:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: 135.00
+13:50:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 0, 30)
+13:50:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -26.57
+13:50:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 10, 30)
+13:50:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -45.00
+13:50:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 20, 30)
+13:50:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -90.00
+13:50:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (0, 30, 30)
+13:50:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -45.00
+13:50:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (10, 30, 30)
+13:50:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -90.00
+13:50:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (20, 30, 30)
+13:50:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -135.00
+13:50:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 30, 30)
+13:50:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -63.43
+13:50:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 20, 30)
+13:50:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -90.00
+13:50:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 10, 30)
+13:50:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -116.57
+13:50:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (30, 0, 30)
+13:50:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -45.00
+13:50:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (20, 0, 30)
+13:50:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -63.43
+13:50:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 79] Velocity vector: (10, 0, 30)
+13:50:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 126] Change in Yaw: -90.00
+13:50:34: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command_worker.py | command_worker | 74] Command worker has stopped

@@ -4,6 +4,7 @@ Command worker to make decisions based on Telemetry Data.
 
 import os
 import pathlib
+from queue import Empty
 
 from pymavlink import mavutil
 
@@ -50,7 +51,9 @@ def command_worker(
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (command.Command)
-    result, command_object = command.Command.create(connection=connection, target=target, local_logger=local_logger)
+    result, command_object = command.Command.create(
+        connection=connection, target=target, local_logger=local_logger
+    )
     if not result:
         local_logger.error("Failed to create command object")
         return
@@ -63,11 +66,12 @@ def command_worker(
                 messages = command_object.run(data)
                 for msg in messages:
                     output_queue.queue.put(msg)
-        except Exception as e:
+        except Empty:
+            break
+        except (OSError, mavutil.mavlink.MAVError) as e:
             local_logger.error(f"Error in main worker loop: {e}", True)
-        
-    local_logger.info("Command worker has stopped", True)
 
+    local_logger.info("Command worker has stopped", True)
 
 
 # =================================================================================================

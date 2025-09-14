@@ -6,7 +6,6 @@ import os
 import pathlib
 
 from pymavlink import mavutil
-import time
 from utilities.workers import queue_proxy_wrapper
 from utilities.workers import worker_controller
 from . import heartbeat_receiver
@@ -18,7 +17,6 @@ from ..common.modules.logger import logger
 # =================================================================================================
 def heartbeat_receiver_worker(
     connection: mavutil.mavfile,
-    args,  # Place your own arguments here
     controller: worker_controller.WorkerController,
     queue: queue_proxy_wrapper.QueueProxyWrapper,
 ) -> None:
@@ -62,7 +60,6 @@ def heartbeat_receiver_worker(
         status = receiver.status
         queue.queue.put(status)
         local_logger.info(f"Current state: {status}", True)
-
 
 
 # =================================================================================================
