@@ -6,7 +6,7 @@ import os
 import pathlib
 
 from pymavlink import mavutil
-
+import time
 from utilities.workers import queue_proxy_wrapper
 from utilities.workers import worker_controller
 from . import heartbeat_receiver
@@ -19,12 +19,16 @@ from ..common.modules.logger import logger
 def heartbeat_receiver_worker(
     connection: mavutil.mavfile,
     args,  # Place your own arguments here
-    # Add other necessary worker arguments here
+    controller: worker_controller.WorkerController,
+    queue: queue_proxy_wrapper.QueueProxyWrapper,
 ) -> None:
     """
     Worker process.
 
     args... describe what the arguments are
+    queue is where the worker will communicate the status
+    connection is the connection to the drone
+    controller is how the communication happens
     """
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
@@ -47,8 +51,18 @@ def heartbeat_receiver_worker(
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (heartbeat_receiver.HeartbeatReceiver)
+    result, receiver = heartbeat_receiver.HeartbeatReceiver.create(connection, local_logger)
+
+    if not result:
+        local_logger.error("Failed to create Heartbeat receiver object")
 
     # Main loop: do work.
+    while not controller.is_exit_requested():
+        receiver.run()
+        status = receiver.status
+        queue.queue.put(status)
+        local_logger.info(f"Current state: {status}", True)
+
 
 
 # =================================================================================================
