@@ -1,0 +1,59 @@
+01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command_worker.py | command_worker | 47] Logger initialized
+01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 116] Change in Alt.: 1.00
+01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 4.01 m/s
+01:43:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 116] Change in Alt.: -1.00
+01:43:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 1.20 m/s
+01:43:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.53 m/s
+01:43:26: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.50 m/s
+01:43:26: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.40 m/s
+01:43:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.33 m/s
+01:43:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.29 m/s
+01:43:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 63.43
+01:43:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.51 m/s
+01:43:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 90.00
+01:43:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 4.45 m/s
+01:43:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 116.57
+01:43:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 6.00 m/s
+01:43:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 45.00
+01:43:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 5.75 m/s
+01:43:29: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 63.43
+01:43:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 6.00 m/s
+01:43:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 90.00
+01:43:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 6.52 m/s
+01:43:30: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 26.57
+01:43:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 5.15 m/s
+01:43:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 45.00
+01:43:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 4.21 m/s
+01:43:31: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 90.00
+01:43:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 3.75 m/s
+01:43:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 45.00
+01:43:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.35 m/s
+01:43:32: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 90.00
+01:43:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 1.12 m/s
+01:43:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: 135.00
+01:43:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.11 m/s
+01:43:33: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -26.57
+01:43:34: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 1.00 m/s
+01:43:34: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -45.00
+01:43:34: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 1.90 m/s
+01:43:34: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -90.00
+01:43:35: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.73 m/s
+01:43:35: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -45.00
+01:43:35: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.75 m/s
+01:43:35: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -90.00
+01:43:36: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 3.00 m/s
+01:43:36: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -135.00
+01:43:36: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 3.39 m/s
+01:43:36: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -63.43
+01:43:37: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.77 m/s
+01:43:37: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -90.00
+01:43:37: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.34 m/s
+01:43:37: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -116.57
+01:43:38: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 2.14 m/s
+01:43:38: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -45.00
+01:43:38: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 1.38 m/s
+01:43:38: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -63.43
+01:43:39: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 94] Average velocity for this trip so far: 0.67 m/s
+01:43:39: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command.py | run | 143] Change in Yaw: -90.00
+01:43:40: [ERROR] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command_worker.py | command_worker | 67] Error in main worker loop: 
+01:43:40: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\command\command_worker.py | command_worker | 69] Command worker has stopped
