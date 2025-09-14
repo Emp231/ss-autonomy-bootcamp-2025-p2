@@ -73,13 +73,12 @@ def read_queue(
         try:
             msg = output_queue.queue.get(timeout=1)
             main_logger.info(f"Output message: {msg}", True)
-        except Exception as e:
+        except (OSError, ValueError, EOFError):
             break
 
 
 def put_queue(
-    data_queue: queue_proxy_wrapper.QueueProxyWrapper,
-    drone_data: list[telemetry.TelemetryData]
+    data_queue: queue_proxy_wrapper.QueueProxyWrapper, drone_data: list[telemetry.TelemetryData]
 ) -> None:
     """
     Place mocked inputs into the input queue periodically with period TELEMETRY_PERIOD.
@@ -238,7 +237,11 @@ def main() -> int:
     threading.Thread(target=read_queue, args=(output_queue, main_logger)).start()
 
     command_worker.command_worker(
-        connection=connection, target=TARGET, data_queue=data_queue, output_queue=output_queue, controller=controller,
+        connection=connection,
+        target=TARGET,
+        data_queue=data_queue,
+        output_queue=output_queue,
+        controller=controller,
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

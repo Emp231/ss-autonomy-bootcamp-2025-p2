@@ -5,7 +5,6 @@ Test the heartbeat reciever worker with a mocked drone.
 import multiprocessing as mp
 import subprocess
 import threading
-import queue
 
 from pymavlink import mavutil
 
@@ -56,11 +55,10 @@ def stop(
     Stop the workers.
     """
     controller.request_exit()
-    
 
 
 def read_queue(
-    queue: queue_proxy_wrapper.QueueProxyWrapper,
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
     main_logger: logger.Logger,
 ) -> None:
     """
@@ -68,11 +66,11 @@ def read_queue(
     """
     while True:
         try:
-            status = queue.queue.get(timeout=1)
+            status = output_queue.queue.get(timeout=1)
             if status == "stop":
                 break
             main_logger.info(f"Queue status: {status}")
-        except Exception:
+        except (OSError, ValueError, EOFError):
             continue
 
 
@@ -128,7 +126,7 @@ def main() -> int:
     manager = mp.Manager()
 
     # Create your queues
-    queue = queue_proxy_wrapper.QueueProxyWrapper(manager)
+    output_queue = queue_proxy_wrapper.QueueProxyWrapper(manager)
 
     # Just set a timer to stop the worker after a while, since the worker infinite loops
     threading.Timer(
@@ -138,10 +136,10 @@ def main() -> int:
     ).start()
 
     # Read the main queue (worker outputs)
-    threading.Thread(target=read_queue, args=(queue, main_logger)).start()
+    threading.Thread(target=read_queue, args=(output_queue, main_logger)).start()
 
     heartbeat_receiver_worker.heartbeat_receiver_worker(
-        connection=connection, args=None, controller=controller, queue=queue
+        connection=connection, controller=controller, queue=output_queue
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
