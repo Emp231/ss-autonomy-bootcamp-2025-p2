@@ -60,8 +60,10 @@ class Command:  # pylint: disable=too-many-instance-attributes
         self.connection = connection
         self.target = target
         self.local_logger = local_logger
-        self.start_pos = None
-        self.previous_data = None
+        self.time = 0
+        self.x_velo = 0
+        self.y_velo = 0
+        self.z_velo = 0
 
     def run(
         self,
@@ -72,10 +74,17 @@ class Command:  # pylint: disable=too-many-instance-attributes
 
         """
 
-        messages = []
+        self.time += 1
+        self.x_velo += data.x_velocity
+        self.y_velo += data.y_velocity
+        self.z_velo += data.z_velocity
+        avg_velo = (
+            self.x_velo / self.time,
+            self.y_velo / self.time, 
+            self.z_velo / self.time
+        )
 
-        velocity_vector = (data.x, data.y, data.z)
-        self.local_logger.info(f"Velocity vector: {velocity_vector}", True)
+        self.local_logger.info(f"Average velocity: {avg_velo}")
 
         # alt
         da = self.target.z - data.z
@@ -93,10 +102,8 @@ class Command:  # pylint: disable=too-many-instance-attributes
                 param6=0,
                 param7=self.target.z,
             )
-            msg = f"Change in Alt.: {da:.2f}"
-            messages.append(msg)
-            self.local_logger.info(msg, True)
-            return [msg]
+            
+            return f"ALT_CHANGE: {da}"
 
         # yaw
         dx = self.target.x - data.x
@@ -107,6 +114,11 @@ class Command:  # pylint: disable=too-many-instance-attributes
         yaw_diff_deg = math.degrees(yaw_diff)
 
         if abs(yaw_diff_deg) > 5:
+            if (yaw_diff_deg > 0):
+                direction = -1
+            else:
+                direction = 0
+            
             self.connection.mav.command_long_send(
                 target_system=1,
                 target_component=0,
@@ -114,18 +126,15 @@ class Command:  # pylint: disable=too-many-instance-attributes
                 confirmation=0,
                 param1=yaw_diff_deg,
                 param2=5,
-                param3=1,
+                param3=direction,
                 param4=1,
                 param5=0,
                 param6=0,
                 param7=0,
             )
-            msg = f"Change in Yaw: {yaw_diff_deg:.2f}"
-            messages.append(msg)
-            self.local_logger.info(msg, True)
-            return [msg]
-
-        return []
+            return f"YAW_CHANGE: {yaw_diff_deg}"
+        
+        return None
 
 
 # =================================================================================================

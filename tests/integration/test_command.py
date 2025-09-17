@@ -56,11 +56,16 @@ def start_drone() -> None:
 # =================================================================================================
 def stop(
     controller: worker_controller.WorkerController,
+    data_queue: queue_proxy_wrapper.QueueProxyWrapper,
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
 ) -> None:
     """
     Stop the workers.
     """
     controller.request_exit()
+    data_queue.fill_and_drain_queue()
+    output_queue.fill_and_drain_queue()
+
 
 
 def read_queue(
@@ -71,11 +76,9 @@ def read_queue(
     Read and print the output queue.
     """
     while True:
-        try:
-            msg = output_queue.queue.get(timeout=1)
-            main_logger.info(f"Output message: {msg}", True)
-        except (OSError, ValueError, EOFError, Empty):
-            break
+        if not output_queue.queue.empty():
+            msg = output_queue.queue.get()
+            main_logger.info(msg)
 
 
 def put_queue(
@@ -229,7 +232,7 @@ def main() -> int:
     ]
 
     # Just set a timer to stop the worker after a while, since the worker infinite loops
-    threading.Timer(TELEMETRY_PERIOD * len(path), stop, (controller,)).start()
+    threading.Timer(TELEMETRY_PERIOD * len(path), stop, (controller,data_queue, output_queue)).start()
 
     # Put items into input queue
     threading.Thread(target=put_queue, args=(data_queue, path)).start()

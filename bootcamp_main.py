@@ -192,9 +192,10 @@ def main() -> int:
     main_logger.info("Requested exit")
 
     # Fill and drain queues from END TO START
-    for output in queues:
-        while not output.queue.empty():
-            output.queue.get()
+    sender_queue.fill_and_drain_queue()
+    receiver_queue.fill_and_drain_queue()
+    telemetry_queue.fill_and_drain_queue()
+    command_queue.fill_and_drain_queue()
     main_logger.info("Queues cleared")
 
     # Clean up worker processes

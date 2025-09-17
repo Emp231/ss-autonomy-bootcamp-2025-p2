@@ -1,4 +1,28 @@
-13:50:17: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\common\modules\logger\logger_main_setup.py | setup_main_logger | 62] main logger initialized
-13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | main | 130] Connected!
-13:50:18: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 76] Output message: Change in Alt.: 1.00
-13:50:19: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 76] Output message: Change in Alt.: -1.00
+20:47:43: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\common\modules\logger\logger_main_setup.py | setup_main_logger | 62] main logger initialized
+20:47:43: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | main | 133] Connected!
+20:47:44: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] ALT_CHANGE: 1
+20:47:44: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] ALT_CHANGE: -1
+20:47:47: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 63.43494882292201
+20:47:48: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 90.0
+20:47:48: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 116.56505117707799
+20:47:49: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 45.0
+20:47:49: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 63.43494882292201
+20:47:50: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 90.0
+20:47:50: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 26.565051177077994
+20:47:51: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 45.0
+20:47:51: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 90.0
+20:47:52: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 45.0
+20:47:52: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 90.0
+20:47:53: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: 135.0
+20:47:53: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -26.565051177077994
+20:47:54: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -45.0
+20:47:54: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -90.0
+20:47:55: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -45.0
+20:47:55: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -90.0
+20:47:56: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -135.0
+20:47:56: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -63.43494882292201
+20:47:57: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -90.0
+20:47:57: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -116.56505117707799
+20:47:58: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -45.00000000000005
+20:47:58: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -63.43494882292201
+20:47:59: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\test_command.py | read_queue | 81] YAW_CHANGE: -90.0

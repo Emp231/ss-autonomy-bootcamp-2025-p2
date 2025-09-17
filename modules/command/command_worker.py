@@ -60,16 +60,12 @@ def command_worker(
 
     # Main loop: do work.
     while not controller.is_exit_requested():
-        try:
-            data = data_queue.queue.get(timeout=1)
-            if data:
-                messages = command_object.run(data)
-                for msg in messages:
-                    output_queue.queue.put(msg)
-        except Empty:
-            break
-        except (OSError, mavutil.mavlink.MAVError) as e:
-            local_logger.error(f"Error in main worker loop: {e}", True)
+        if not data_queue.queue.empty():
+            tel_data = data_queue.queue.get()
+            msg = command_object.run(tel_data)
+
+            if msg:
+                output_queue.queue.put(msg)
 
     local_logger.info("Command worker has stopped", True)
 
