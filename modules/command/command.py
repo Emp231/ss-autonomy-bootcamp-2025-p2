@@ -78,11 +78,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         self.x_velo += data.x_velocity
         self.y_velo += data.y_velocity
         self.z_velo += data.z_velocity
-        avg_velo = (
-            self.x_velo / self.time,
-            self.y_velo / self.time, 
-            self.z_velo / self.time
-        )
+        avg_velo = (self.x_velo / self.time, self.y_velo / self.time, self.z_velo / self.time)
 
         self.local_logger.info(f"Average velocity: {avg_velo}")
 
@@ -102,7 +98,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
                 param6=0,
                 param7=self.target.z,
             )
-            
+
             return f"ALT_CHANGE: {da}"
 
         # yaw
@@ -114,11 +110,11 @@ class Command:  # pylint: disable=too-many-instance-attributes
         yaw_diff_deg = math.degrees(yaw_diff)
 
         if abs(yaw_diff_deg) > 5:
-            if (yaw_diff_deg > 0):
+            if yaw_diff_deg > 0:
                 direction = -1
             else:
                 direction = 0
-            
+
             self.connection.mav.command_long_send(
                 target_system=1,
                 target_component=0,
@@ -133,7 +129,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
                 param7=0,
             )
             return f"YAW_CHANGE: {yaw_diff_deg}"
-        
+
         return None
 
 

@@ -7,7 +7,6 @@ import multiprocessing as mp
 import subprocess
 import threading
 import time
-from queue import Empty
 
 from pymavlink import mavutil
 
@@ -65,7 +64,6 @@ def stop(
     controller.request_exit()
     data_queue.fill_and_drain_queue()
     output_queue.fill_and_drain_queue()
-
 
 
 def read_queue(
@@ -232,7 +230,9 @@ def main() -> int:
     ]
 
     # Just set a timer to stop the worker after a while, since the worker infinite loops
-    threading.Timer(TELEMETRY_PERIOD * len(path), stop, (controller,data_queue, output_queue)).start()
+    threading.Timer(
+        TELEMETRY_PERIOD * len(path), stop, (controller, data_queue, output_queue)
+    ).start()
 
     # Put items into input queue
     threading.Thread(target=put_queue, args=(data_queue, path)).start()
