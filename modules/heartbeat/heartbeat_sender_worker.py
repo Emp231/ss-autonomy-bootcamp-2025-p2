@@ -54,10 +54,8 @@ def heartbeat_sender_worker(
 
     # Main loop: do work.
     while not controller.is_exit_requested():
-        try:
-            sender.run(local_logger=local_logger)
-        except (OSError, mavutil.mavlink.MAVError) as e:
-            local_logger.error(f"Error in heartbeat sender worker: {e}", True)
+        controller.check_pause()
+        sender.run(local_logger=local_logger)
         time.sleep(1)
 
 

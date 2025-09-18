@@ -58,15 +58,10 @@ def telemetry_worker(
 
     # Main loop: do work.
     while not controller.is_exit_requested():
-        try:
-            data = telemetry_obj.run()
-            if data:
-                local_logger.info(f"Telemetry data queued: {data}", True)
-                queue.queue.put(data)
-            else:
-                local_logger.info("Telemetry run returned None", True)
-        except (OSError, mavutil.mavlink.MAVError) as e:
-            local_logger.error(f"Error when running main loop: {e}", True)
+        controller.check_pause()
+        data = telemetry_obj.run()
+        local_logger.info(f"Telemetry data queued: {data}", True)
+        queue.queue.put(data)
 
         time.sleep(0.01)
 

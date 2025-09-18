@@ -101,7 +101,7 @@ def main() -> int:
         count=NUM_HEARTBEAT_SENDER,
         work_arguments=(connection,),
         input_queues=[],
-        output_queues=[sender_queue],
+        output_queues=[],
         controller=main_controller,
         local_logger=main_logger,
     )

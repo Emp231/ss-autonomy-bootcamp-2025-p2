@@ -74,9 +74,8 @@ def read_queue(
     Read and print the output queue.
     """
     while True:
-        if not output_queue.queue.empty():
-            msg = output_queue.queue.get()
-            main_logger.info(msg)
+        msg = output_queue.queue.get()
+        main_logger.info(msg)
 
 
 def put_queue(

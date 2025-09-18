@@ -66,8 +66,9 @@ class HeartbeatReceiver:
                 self.local_logger.warning(
                     f"Did not receive heartbeat. Count: {self.missed_heartbeats}", True
                 )
+                self.status = "Disconnected"
 
-                if self.missed_heartbeats >= 5 and self.status != "Disconnected":
+                if self.missed_heartbeats >= 5:
                     self.status = "Disconnected"
                     self.local_logger.warning("Lost connection", True)
 

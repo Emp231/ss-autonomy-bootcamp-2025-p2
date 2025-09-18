@@ -59,12 +59,10 @@ def command_worker(
 
     # Main loop: do work.
     while not controller.is_exit_requested():
-        if not data_queue.queue.empty():
-            tel_data = data_queue.queue.get()
-            msg = command_object.run(tel_data)
-
-            if msg:
-                output_queue.queue.put(msg)
+        controller.check_pause()
+        tel_data = data_queue.queue.get()
+        msg = command_object.run(tel_data)
+        output_queue.queue.put(msg)
 
     local_logger.info("Command worker has stopped", True)
 

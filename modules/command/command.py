@@ -113,7 +113,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
             if yaw_diff_deg > 0:
                 direction = -1
             else:
-                direction = 0
+                direction = 1
 
             self.connection.mav.command_long_send(
                 target_system=1,
