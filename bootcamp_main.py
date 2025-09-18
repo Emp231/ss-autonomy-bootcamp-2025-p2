@@ -186,6 +186,10 @@ def main() -> int:
                 try:
                     msg = output.queue.get_nowait()
                     main_logger.info(f"Received message: {msg}")
+
+                    if msg == "Disconnected":
+                        break
+
                 except Empty:
                     break
         time.sleep(1)
