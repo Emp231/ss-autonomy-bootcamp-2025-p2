@@ -60,7 +60,6 @@ def heartbeat_receiver_worker(
         receiver.run()
         status = receiver.status
         queue.queue.put(status)
-        local_logger.info(f"Current state: {status}", True)
 
 
 # =================================================================================================

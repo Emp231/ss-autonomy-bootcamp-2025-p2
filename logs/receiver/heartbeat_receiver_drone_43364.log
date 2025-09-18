@@ -1,0 +1,13 @@
+00:38:08: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | main | 42] Logger initialized
+00:38:08: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:09: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:10: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:11: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:12: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:21: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:22: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:23: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:24: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:25: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:27: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | send_heartbeats | 59] Drone: Sent a heartbeat
+00:38:28: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\tests\integration\mock_drones\heartbeat_receiver_drone.py | main | 79] Passesd!

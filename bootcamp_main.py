@@ -30,7 +30,6 @@ CONNECTION_STRING = "tcp:localhost:12345"
 #                            ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
 # =================================================================================================
 # Set queue max sizes (<= 0 for infinity)
-HEARTBEAT_SENDER_QUEUE_SIZE = 10
 HEARTBEAT_RECEIVER_QUEUE_SIZE = 10
 TELEMETRY_QUEUE_SIZE = 10
 COMMAND_QUEUE_SIZE = 10
@@ -89,7 +88,6 @@ def main() -> int:
     manager = mp.Manager()
 
     # Create queues
-    sender_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, HEARTBEAT_SENDER_QUEUE_SIZE)
     receiver_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, HEARTBEAT_RECEIVER_QUEUE_SIZE)
     telemetry_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, TELEMETRY_QUEUE_SIZE)
     command_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, COMMAND_QUEUE_SIZE)
@@ -106,6 +104,7 @@ def main() -> int:
         local_logger=main_logger,
     )
     if not result:
+        main_logger.error("Sender worker failed")
         return -1
 
     # Heartbeat receiver
@@ -119,6 +118,7 @@ def main() -> int:
         local_logger=main_logger,
     )
     if not result:
+        main_logger.error("Receiver worker failed")
         return -1
 
     # Telemetry
@@ -132,6 +132,7 @@ def main() -> int:
         local_logger=main_logger,
     )
     if not result:
+        main_logger.error("Telemetry worker failed")
         return -1
 
     # Command
@@ -145,7 +146,9 @@ def main() -> int:
         local_logger=main_logger,
     )
     if not result:
+        main_logger.error("Command worker failed")
         return -1
+
     assert heartbeat_sender_worker_prop is not None
     assert heartbeat_receiver_worker_prop is not None
     assert telemetry_worker_prop is not None
@@ -175,7 +178,7 @@ def main() -> int:
     # Main's work: read from all queues that output to main, and log any commands that we make
     # Continue running for 100 seconds or until the drone disconnects
     start_time = time.time()
-    queues = [sender_queue, receiver_queue, telemetry_queue, command_queue]
+    queues = [receiver_queue, telemetry_queue, command_queue]
 
     while time.time() - start_time < 100 and connection.target_system != 0:
         for output in queues:
@@ -192,7 +195,6 @@ def main() -> int:
     main_logger.info("Requested exit")
 
     # Fill and drain queues from END TO START
-    sender_queue.fill_and_drain_queue()
     receiver_queue.fill_and_drain_queue()
     telemetry_queue.fill_and_drain_queue()
     command_queue.fill_and_drain_queue()

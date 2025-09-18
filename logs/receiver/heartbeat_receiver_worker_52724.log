@@ -1,0 +1,11 @@
+00:38:08: [INFO] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver_worker.py | heartbeat_receiver_worker | 46] Logger initialized
+00:38:13: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 1
+00:38:14: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 2
+00:38:15: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 3
+00:38:16: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 4
+00:38:17: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 5
+00:38:18: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 6
+00:38:19: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 7
+00:38:20: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 8
+00:38:26: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 1
+00:38:28: [WARNING] [C:\Users\saman\OneDrive\Documents\GitHub\ss-autonomy-bootcamp-2025-p2\modules\heartbeat\heartbeat_receiver.py | run | 63] Did not receive heartbeat. Count: 1
